@@ -1,0 +1,17 @@
+django
+djangorestframework
+djangorestframework-simplejwt
+django-cors-headers
+django-ratelimit
+django-environ
+psycopg2-binary
+cloudinary
+django-cloudinary-storage
+Pillow
+tensorflow
+numpy
+sentry-sdk
+drf-yasg
+python-decouple
+gunicorn
+dj-database-url

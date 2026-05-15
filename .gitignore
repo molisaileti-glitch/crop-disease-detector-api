@@ -82,6 +82,28 @@ target/
 profile_default/
 ipython_config.py
 
+# Virtual environment
+venv/
+
+# Environment variables — NEVER push this
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+db.sqlite3
+
+# ML model — too large for GitHub
+*.h5
+
+# Media files
+media/
+
+# Static files
+staticfiles/
+
 # pyenv
 #   For a library or package, you might want to ignore these files since the code is
 #   intended to run in multiple environments; otherwise, check them in:
