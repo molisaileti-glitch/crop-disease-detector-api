@@ -55,6 +55,7 @@ AUTH_USER_MODEL = 'api.User'
 MIDDLEWARE = [
     # CORS must be first
     'corsheaders.middleware.CorsMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -186,3 +187,5 @@ MIN_IMAGE_DIMENSION = 100
 MAX_IMAGE_DIMENSION = 4000
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Static files with whitenoise
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

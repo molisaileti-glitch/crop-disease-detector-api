@@ -16,24 +16,19 @@ from drf_yasg import openapi
 # ── SWAGGER CONFIGURATION ────────────────────────────
 # Auto generates beautiful API documentation
 # Access at: http://127.0.0.1:8000/swagger/
+from rest_framework import permissions
+
 schema_view = get_schema_view(
     openapi.Info(
         title="Crop Disease Detector API",
         default_version='v1',
-        description="""
-        REST API for the Crop Disease Detector mobile app.
-        Helps Tanzanian farmers identify crop diseases from photos.
-
-        Features:
-        - User authentication with JWT
-        - Image upload and disease diagnosis
-        - Treatment recommendations
-        - Diagnosis history
-        """,
+        description="REST API for crop disease detection",
         contact=openapi.Contact(email="molisaileti@gmail.com"),
     ),
     public=True,
+    # Allow anyone to view docs without logging in
     permission_classes=[permissions.AllowAny],
+    authentication_classes=[],
 )
 
 urlpatterns = [
