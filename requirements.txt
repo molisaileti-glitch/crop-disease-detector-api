@@ -8,9 +8,8 @@ psycopg2-binary
 cloudinary
 django-cloudinary-storage
 Pillow
-tensorflow
+tensorflow-cpu==2.13.0
 numpy
-sentry-sdk
 drf-yasg
 python-decouple
 gunicorn
